@@ -127,7 +127,7 @@ function send_data() {
     document.getElementById("prediction").innerHTML="Loading...";
     xhr.onreadystatechange = function () {
         if (xhr.readyState == XMLHttpRequest.DONE) {
-            document.getElementById("displayText").innerHTML = "Sales Prediction of " + oem.value + "&nbsp;" + car.value + "&nbsp;in&nbsp;" + printmonth + "&nbsp;2018 is:";
+            document.getElementById("displayText").innerHTML = "Sales Prediction of " + oem.value + "&nbsp;" + car.value + "&nbsp;for&nbsp;" + printmonth + "&nbsp;2018 is:";
            
             const counter = document.querySelector('.counter');
             counter.innerText = '0';
